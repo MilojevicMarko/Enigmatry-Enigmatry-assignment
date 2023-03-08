@@ -1,0 +1,68 @@
+.technical {
+  background: #f2f2f2;
+  margin-top: 112px;
+  font-family: $primary-font;
+  .container {
+    padding-right: 0;
+  }
+  .tech-spec {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    padding: 32px 0 70px;
+    .technical-title {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      padding-left: 20px;
+      h3 {
+        color: $oragne;
+      }
+    }
+    .model {
+      min-width: 112px;
+      margin-right: 40px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .frame-size {
+      min-width: 84px;
+      margin-right: 40px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .weight {
+      min-width: 55px;
+      margin-right: 40px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .max-speed {
+      min-width: 85px;
+      margin-right: 40px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .battery {
+      min-width: 58px;
+      margin-right: 40px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .engine {
+      min-width: 210px;
+      margin-right: 40px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .technical-row {
+      padding: 8px 0 8px 20px;
+      display: flex;
+      align-items: center;
+    }
+    .technical-row.white {
+      background-color: $white;
+      min-width: 850px;
+    }
+  }
+}

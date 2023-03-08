@@ -1,0 +1,42 @@
+main {
+  img {
+    width: 100%;
+  }
+  .more {
+    color: $oragne;
+    background-color: $white;
+    padding: 13px 32px;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #DEDEDE;
+    border-radius: 4px;
+  }
+  .main-text {
+    h2 {
+      margin: 20px 0 24px ;
+    }
+  }
+  .button-more {
+    margin:24px 0 40px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main {
+    .main-box {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      img {
+        max-width: 592px;
+        margin-bottom: 8px;
+      }
+    }
+    .main-text {
+      margin-right: 20px;
+      max-width: 488px;
+      .button-more {
+        margin-top: 24px;
+      }
+    }
+  }
+}

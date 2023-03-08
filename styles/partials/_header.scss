@@ -1,0 +1,229 @@
+header {
+  background-color: $oragne;
+  color: $white;
+  height: 70px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 24px;
+  }
+  .navLogo {
+    display: flex;
+    align-items: center;
+    .dialog-content {
+      display: none;
+    }
+  }
+  nav {
+    font-size: 20px;
+    margin-right: 31px;
+    .nav-desktop {
+      display: none;
+    }
+    .fa-solid.fa-bars {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  .logo {
+    img {
+      width: 105px;
+      height: 28px;
+    }
+  }
+  .accounts {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: $white;
+    .fa-heart {
+      margin: 0 24px;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 120px;
+    .container {
+      max-width: 1216px;
+      margin: 0 auto;
+      height: 120px;
+    }
+    .navLogo {
+      .dialog {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+      }
+
+      .dialog-content {
+        background-color: $white;
+        margin: 10% auto;
+        padding: 20px 32px;
+        width: 480px;
+        height: 412px;
+        display: block;
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          color: $standardcolor;
+        }
+        #email {
+          width: 416px;
+          padding: 19px 0 19px 16px;
+          margin-bottom: 16px;
+          background: #f2f2f2;
+          border-radius: 4px 4px 0px 0px;
+          border: none;
+          font-size: 14px;
+          line-height: 18px;
+          color: $standardcolor;
+          font-family: $primary-font;
+        }
+        #comment{
+          width: 416px;
+          padding: 19px 91px 19px 16px;
+          background: #f2f2f2;
+          border-radius: 4px 4px 0px 0px;
+          border: none;
+          font-size: 14px;
+          line-height: 18px;
+          color: $standardcolor;
+          font-family: $primary-font;
+        }
+        .contact-button {
+          display: flex;
+          justify-content: end;
+          margin-top: 35px;
+          .cancel {
+            font-family: $title-font;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: $oragne;
+            border: none;
+            background-color: $white;
+            margin-right: 24px;
+          }
+          .message {
+            color: $white;
+            background-color: $oragne;
+            border: none;
+            padding: 11px 20px;
+          }
+        }
+      }
+      .close {
+        color: $standardcolor;
+        display: flex;
+        justify-content: end;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+        height: 20px;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: $standardcolor;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      flex-direction: row-reverse;
+      .logo {
+        margin-right: 30px;
+        width: 150px;
+        height: 40px;
+      }
+    }
+    nav {
+      .fa-solid.fa-bars {
+        display: none;
+      }
+      .nav-desktop {
+        display: flex;
+        align-items: center;
+        font-family: $primary-font;
+        font-weight: 600;
+        ul {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          .modal {
+            display: none;
+          }
+          li {
+            padding-right: 20px;
+          }
+          li.products {
+            a {
+              color: $standardcolor;
+            }
+          }
+          .search-nav {
+            position: relative;
+            input {
+              padding: 19px 16px;
+              color: $standardcolor;
+              width: 244px;
+            }
+            .fa-magnifying-glass {
+              color: $standardcolor;
+              position: absolute;
+              top: 50%;
+              right: 37px;
+              font-size: 20px;
+              transform: translate(0, -50%);
+            }
+          }
+          a {
+            .products {
+              color: $standardcolor;
+            }
+            font-size: 18px;
+            line-height: 24px;
+            text-decoration: none;
+            color: $white;
+            &:hover {
+              padding-bottom: 42px;
+              border-bottom: 2px solid $standardcolor;
+              @include transformNew (translateY -10px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  header {
+    .container {
+      padding: 0;
+    }
+    .navLogo {
+      nav {
+        .nav-desktop {
+          ul {
+            li {
+              padding-right: 40px;
+            }
+          }
+          .search-nav {
+            .fa-magnifying-glass {
+              right: 47px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

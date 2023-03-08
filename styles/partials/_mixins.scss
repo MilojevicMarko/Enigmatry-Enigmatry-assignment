@@ -1,0 +1,14 @@
+@mixin transition-property($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  transition: $property;
+}
+
+@mixin transformNew($rotate: 0, $translate: translate(0, 0)) {
+  -moz-transform: rotate(#{$rotate}deg) $translate;
+    -o-transform: rotate($rotate) $translate;
+    -ms-transform: rotate(#{$rotate}deg) $translate;
+    -webkit-transform: rotate(#{$rotate}deg) $translate;
+    transform: rotate(#{$rotate}deg) $translate;
+    transform: translateY(-10px);
+}
