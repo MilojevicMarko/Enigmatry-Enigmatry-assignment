@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="styles/fontawesome-free-6.3.0-web/css/all.css" />
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="navLogo">
+				<nav>
+					<i class="fa-solid fa-bars"></i>
+					<div class="nav-desktop">
+						<ul>
+							<li class="products"><a href="#">Products</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">About us</a></li>
+							<li id="contactLink"><a href="#">Contact</a></li>
+							<li class="search-nav">
+								<input type="search" id="query" placeholder="Search..."
+									aria-label="Search through site content">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</li><!-- end .search nav-->
+						</ul>
+					</div><!-- end .nav-desctop -->
+				</nav>
+				<div role="dialog" id="dialog" class="dialog">
+					<div class="dialog-content">
+						<span class="close">&times;</span>
+						<h2>Contact Us</h2>
+						<p>We'll get back to you as soon as possible.</p>
+						<input id="email" name="email" autocomplete="email" autocapitalize="off" autocorrect="off"
+							spellcheck="false" type="text" placeholder="Your e-mail" />
+						<textarea name="message" type="text" id="comment" placeholder="Your Message"></textarea>
+						<div class="contact-button">
+							<button class="cancel" aria-pressed=true>Cancel</button>
+							<button class="message" aria-pressed=true>Send message</button>
+						</div> <!-- end .contact-button -->
+					</div><!-- .dialog-content -->
+				</div><!-- end #dialog .dialog-->
+				<div class="logo">
+					<img src="/img/LOGO.png" alt="logo" title="enigmatry" />
+				</div><!-- end. logo -->
+			</div>
+			<!-- end .navLogo -->
+			<div class="accounts">
+				<i class="fa-regular fa-user"></i>
+				<i class="fa-regular fa-heart"></i>
+				<i class="fa-solid fa-cart-shopping"></i>
+			</div> <!-- end .accounts -->
+		</div> <!-- end .container -->
+	</header>
+	<div class="feed">
+		<div class="container">
+			<div class="pages">
+				<span>Home <i class="fa-solid fa-chevron-right"></i></span>
+				<span>Products <i class="fa-solid fa-chevron-right"></i></span>
+				<span>Bikes <i class="fa-solid fa-chevron-right"></i></span>
+			</div><!-- end .pages -->
+			<div class="title">
+				<h1>Product name lorem ipsum</h1>
+				<div class="title-arrow">
+					<i class="fa-solid fa-arrow-left"></i>
+					<i class="fa-solid fa-arrow-right"></i>
+					<i class="fa-regular fa-heart"></i>
+					<i class="fa-solid fa-share-nodes"></i>
+				</div> <!-- end title-arrow -->
+			</div> <!-- end .title-->
+			<div class="hero">
+				<div class="hero-box">
+					<div class="byke">
+						<span>
+							<i class="fa-solid fa-chevron-left"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-chevron-right"></i>
+						</span>
+					</div><!-- end .byke -->
+				</div> <!-- end .hero-box -->
+				<div class="stock">
+					<h3>In stock <span>&#8722; only 2 left</span></h3>
+					<p class="ptext">Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum
+						dolore eu fugiat nulla pariatur. Excepteur
+						sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est
+						laborum.</p>
+					<div class="select-container">
+						<label for="model" class="model">Model</label>
+						<select name="bayk" id="model">
+							<option value="Gents">Gents &#8722; Medium</option>
+						</select>
+					</div> <!-- end. model-container -->
+					<div class="select-container">
+						<label for="model" class="model">Color</label>
+						<select name="bayk" id="model">
+							<option value="color">Black</option>
+						</select>
+					</div> <!-- end. model-container -->
+					<form action="#" method="post">
+						<div class="check-box">
+							<input type="checkbox" id="myCheckbox" name="myCheckbox" class="ptext checkmark" />
+							<label for="chk1-label">Add option lorem ipsum</label>
+						</div><!-- end .check-box -->
+						<div class="check-box">
+							<input type="checkbox" id="myCheckbox" name="myCheckbox" class="ptext" />
+							<label for="chk1-label">Add option autpat velit cano totam rem aperiam</label>
+						</div><!-- end .check-box -->
+					</form>
+					<div class="stock-button">
+						<button class="add" aria-pressed=true>Add to card</button>
+						<button class="contactus" id="contact-us" aria-pressed=true>Contact us</button>
+					</div> <!-- end .stock-button -->
+				</div> <!-- end .stock -->
+			</div><!-- end .hero-->
+			<div class="other-pages">
+				<h3>Description</h3>
+				<h3>Specification</h3>
+				<h3>Reviews(&#55;)</h3>
+			</div> <!-- end other-pages -->
+		</div><!-- end .contaiener-->
+		<div class="border-box"></div>
+		<main>
+			<div class="container main-box">
+				<img src="/img/imgage_2.png" alt="pepol" title="pipol" />
+				<div class="main-text">
+					<h2>Product description</h2>
+					<p class="ptext">
+						Lorem ipsum dolor sit amet, consectetur adipiscing
+						elit, sed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua Ut enim ad minim veniam, quis
+						nostrud exercitation ullamco laboris nisi ut aliquip
+						ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum
+						dolore eu fugiat nulla pariatur.</p>
+					<p class="ptext">Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit
+						anim id est laborum. Sed ut perspiciatis unde omnis
+						iste natus error sit voluptatem accusantium doloremque
+						laudantium.</p>
+					<div class="button-more">
+						<button class="more">More info</button>
+					</div> <!-- button-more -->
+				</div><!-- end .main text -->
+			</div> <!-- end .containter -->
+		</main>
+	</div> <!-- end .container -->
+	</div> <!-- end .feed -->
+	<div class="technical">
+		<div class="container">
+			<div class="tech-spec">
+				<h2>Technical specification</h2>
+				<div class="technical-title">
+					<h3 class="model">Model</h3>
+					<h3 class="frame-size">Frame size</h3>
+					<h3 class="weight">Weight</h3>
+					<h3 class="max-speed">Max Speed</h3>
+					<h3 class="battery">Battery</h3>
+					<h3 class="Engaine">Engine</h3>
+				</div> <!-- end .technical-title-->
+				<div class="technical-row white">
+					<div class="model">Ladies &#x2013; Small</div>
+					<div class="frame-size">50 cm</div>
+					<div class="weight">25 kg</div>
+					<div class="max-speed">45 km/h</div>
+					<div class="battery">625 Wh</div>
+					<div class="engine">Bosch Performance Line Speed</div>
+				</div> <!-- end .tehnicla-row .white-->
+				<div class="technical-row">
+					<div class="model">Ladies &#x2013; Medium</div>
+					<div class="frame-size">55 cm</div>
+					<div class="weight">24 kg</div>
+					<div class="max-speed">45 km/h</div>
+					<div class="battery">625 Wh</div>
+					<div class="engine">Bosch Performance Line Speed</div>
+				</div> <!-- end .tehnicla-row-->
+				<div class="technical-row white">
+					<div class="model">Ladies &#x2013; Large</div>
+					<div class="frame-size">60 cm</div>
+					<div class="weight">26 kg</div>
+					<div class="max-speed">45 km/h</div>
+					<div class="battery">625 Wh</div>
+					<div class="engine">Bosch Performance Line Speed</div>
+				</div> <!-- end tehnicla-row .white-->
+				<div class="technical-row">
+					<div class="model">Gents &#x2013; Small</div>
+					<div class="frame-size">50 cm</div>
+					<div class="weight">24 kg</div>
+					<div class="max-speed">45 km/h</div>
+					<div class="battery">625 Wh</div>
+					<div class="engine">Bosch Performance Line Speed</div>
+				</div> <!-- end tehnicla-row-->
+				<div class="technical-row white">
+					<div class="model">Gents &#x2013; Medium</div>
+					<div class="frame-size">55 cm</div>
+					<div class="weight">25 kg</div>
+					<div class="max-speed">45 km/h</div>
+					<div class="battery">625 Wh</div>
+					<div class="engine">Bosch Performance Line Speed</div>
+				</div> <!-- end tehnicla-row .white-->
+				<div class="technical-row">
+					<div class="model">Gemts &#x2013; Large</div>
+					<div class="frame-size">60 cm</div>
+					<div class="weight">26 kg</div>
+					<div class="max-speed">45 km/h</div>
+					<div class="battery">625 Wh</div>
+					<div class="engine">Bosch Performance Line Speed</div>
+				</div> <!-- end tehnicla-row-->
+			</div> <!-- end .tech-spec -->
+		</div><!-- end .container-->
+	</div> <!-- end techincal -->
+	<script src="main.js"></script>
+</body>
+
+</html>
